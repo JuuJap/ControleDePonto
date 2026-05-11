@@ -1,3 +1,10 @@
+/*
+TODO O CONTEUDO CRIADO AQUI FOI DESENVOLVIDO PELOS ESTUDANTES
+JULIO APARECIDO, MATHEUS BASSI E JULIO CESAR.
+
+USO INDEVIDO SERA CONSIDERADO COMO PURA BABAQUICE.
+*/
+
 body {
     font-family: Arial, sans-serif;
     background: #f0f0f0;
@@ -5,11 +12,12 @@ body {
     transition: 0.3s;
 }
 
-/* HEADER */
+
 
 header {
     width: 100%;
     min-height: 80px;
+
     background: #333;
     color: white;
 
@@ -18,6 +26,7 @@ header {
     align-items: center;
 
     padding: 15px 40px;
+
     box-sizing: border-box;
 
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -36,24 +45,29 @@ header {
     gap: 10px;
 }
 
+
+
 .ajuda-btn,
 .tema-btn {
+    background: #555;
+    color: white;
+
     padding: 10px 18px;
+
     border: none;
     border-radius: 10px;
+
     cursor: pointer;
+
     transition: 0.3s;
+
     font-size: 16px;
-}
 
-.ajuda-btn {
-    background: #555;
-    color: white;
-}
+    text-decoration: none;
 
-.tema-btn {
-    background: #555;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ajuda-btn:hover,
@@ -61,11 +75,13 @@ header {
     transform: scale(1.05);
 }
 
-/* CONTAINER */
+
 
 .container {
     background: white;
+
     padding: 30px;
+
     border-radius: 15px;
 
     width: 90%;
@@ -80,11 +96,11 @@ header {
     transition: 0.3s;
 }
 
-/* INPUTS */
 
 select,
 input {
     width: 100%;
+
     padding: 12px;
     margin: 10px 0;
 
@@ -96,12 +112,13 @@ input {
     font-size: 16px;
 }
 
-/* BOTÕES */
+
 
 .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
+
     flex-wrap: wrap;
 }
 
@@ -112,6 +129,7 @@ input {
     border-radius: 10px;
 
     cursor: pointer;
+
     transition: 0.3s;
 
     min-width: 120px;
@@ -133,18 +151,22 @@ input {
     color: white;
 }
 
-/* TABELA */
+
 
 table {
     width: 100%;
+
     border-collapse: collapse;
+
     margin-top: 20px;
 }
 
 th,
 td {
     border: 1px solid #cccccc;
+
     padding: 10px;
+
     text-align: center;
     vertical-align: middle;
 
@@ -160,7 +182,7 @@ tr:nth-child(even) {
     background: #f2f2f2;
 }
 
-/* TEMA ESCURO */
+
 
 .dark {
     background: #121212;
@@ -180,6 +202,7 @@ tr:nth-child(even) {
 .dark select {
     background: #2b2b2b;
     color: white;
+
     border: 1px solid #555;
 }
 
@@ -199,7 +222,7 @@ tr:nth-child(even) {
     background: #2a2a2a;
 }
 
-/* RESPONSIVIDADE */
+
 
 @media (max-width: 768px) {
 
@@ -209,23 +232,29 @@ tr:nth-child(even) {
 
     header {
         padding: 15px 20px;
+
         justify-content: center;
+
         text-align: center;
     }
 
     .logo {
         width: 100%;
+
         font-size: 24px;
     }
 
     .header-buttons {
         width: 100%;
+
         justify-content: center;
     }
 
     .container {
         width: 95%;
+
         padding: 15px;
+
         margin-top: 20px;
     }
 
@@ -258,6 +287,7 @@ tr:nth-child(even) {
     .ajuda-btn,
     .tema-btn {
         padding: 8px 12px;
+
         font-size: 14px;
     }
 
