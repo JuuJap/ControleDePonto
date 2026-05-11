@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Ponto</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Controle de Ponto
+        </div>
+
+        <div class="header-buttons">
+
+            <button
+                type="button"
+                class="ajuda-btn">
+
+                Ajuda
+
+            </button>
+
+            <button
+                type="button"
+                class="tema-btn"
+                onclick="trocarTema()">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- CONTAINER -->
+
+    <div class="container">
+
+        <h1>Registro</h1>
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite o nome">
+
+        <!-- BOTÕES -->
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                onclick="registrar('entrada')">
+
+                Entrada
+
+            </button>
+
+            <button
+                type="button"
+                onclick="registrar('saida')">
+
+                Saída
+
+            </button>
+
+        </div>
+
+        <!-- FILTRO -->
+
+        <h3>Filtrar por data</h3>
+
+        <input
+            type="date"
+            id="filtroData"
+            onchange="filtrar()">
+
+        <!-- TABELA -->
+
+        <h2>Registros</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Horas Trabalhadas</th>
+                    <th>Ação</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tabela"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
