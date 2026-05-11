@@ -1,5 +1,5 @@
 <h1>Como Usar</h1>
-<p>pra funcionar precisa deixar a pasta do projeto (ControlePonto) dentro da pasta "htdocs" do Xampp e abrir usando o seguinte url "http://localhost/ControlePonto/"</p>
+<p>pra funcionar precisa deixar a pasta do projeto (ControlePonto) dentro da pasta "htdocs" do Xampp e abrir usando o seguinte url <b>"http://localhost/ControlePonto/"</b></p>
 
 <h2>Em seguida</h2>
 
