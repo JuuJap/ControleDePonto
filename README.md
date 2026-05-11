@@ -35,23 +35,4 @@ VALUES
 
 </b></code></pre>
 
-<style>
-    pre {
-    background: #1e1e1e;
-    color: #ffffff;
 
-    padding: 15px;
-
-    border-radius: 10px;
-
-    overflow-x: auto;
-
-    text-align: left;
-
-    font-size: 14px;
-}
-
-code {
-    font-family: Consolas, monospace;
-}
-</style>
