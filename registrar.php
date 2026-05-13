@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Sao_Paulo');
+
 include("db.php");
 
 $nome = $_POST['nome'];
@@ -17,12 +19,9 @@ if($conexao->query($sql)){
     echo "erro";
 }
 
-$tipo = strtolower($_POST['tipo']);
-
 /*
 TODO O CONTEUDO CRIADO AQUI FOI DESENVOLVIDO PELOS ESTUDANTES JULIO APARECIDO, MATHEUS BASSI E JULIO CESAR, 
 USO INDEVIDO SERA CONSIDERADA COMO PLAGIO, E VAMOS ENCARAR COMO PURA BABAQUICE DA SUA PARTE
-  */
+*/
 
 ?>
-
