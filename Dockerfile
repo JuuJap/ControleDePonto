@@ -1,7 +1,9 @@
 FROM webdevops/php-apache:8.2
 
+COPY . /app
+
 WORKDIR /app
 
-COPY . /app/public
+ENV WEB_DOCUMENT_ROOT=/app
 
 EXPOSE 80
