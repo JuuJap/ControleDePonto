@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once __DIR__ . '/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,23 +12,21 @@ require_once 'db.php';
     <style>
         body{
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            background:#f4f4f4;
             margin:0;
             padding:40px;
         }
 
         .container{
-            max-width:800px;
+            max-width:700px;
             margin:auto;
             background:white;
             padding:30px;
             border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
         }
 
         h1{
             text-align:center;
-            color:#333;
         }
 
         .status{
@@ -52,11 +50,6 @@ require_once 'db.php';
             padding:15px;
             border-radius:5px;
             text-align:center;
-            transition:0.3s;
-        }
-
-        a:hover{
-            background:#0056b3;
         }
     </style>
 </head>
@@ -67,7 +60,7 @@ require_once 'db.php';
     <h1>Controle de Ponto</h1>
 
     <div class="status">
-        Sistema online funcionando com sucesso.
+        Sistema online funcionando.
     </div>
 
     <div class="links">
