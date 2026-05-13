@@ -6,7 +6,6 @@ COPY . /var/www/html/
 
 RUN chown -R www-data:www-data /var/www/html
 
-RUN a2dismod mpm_event || true
-RUN a2enmod mpm_prefork || true
-
 EXPOSE 80
+
+CMD ["apache2-foreground"]
