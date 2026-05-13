@@ -3,11 +3,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$host = $_ENV['MYSQLHOST'];
-$usuario = $_ENV['MYSQLUSER'];
-$senha = $_ENV['MYSQLPASSWORD'];
-$banco = $_ENV['MYSQLDATABASE'];
-$porta = $_ENV['MYSQLPORT'];
+$host = getenv("MYSQLHOST");
+$usuario = getenv("MYSQLUSER");
+$senha = getenv("MYSQLPASSWORD");
+$banco = getenv("MYSQLDATABASE");
+$porta = getenv("MYSQLPORT");
 
 $conexao = new mysqli(
     $host,
