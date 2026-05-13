@@ -1,17 +1,24 @@
 <?php
 
-date_default_timezone_set('America/Sao_Paulo');
+date_default_timezone_set("America/Sao_Paulo");
 
 include("db.php");
 
 $nome = $_POST['nome'];
 $tipo = $_POST['tipo'];
 
-$data = date("Y-m-d");
-$hora = date("H:i:s");
+$dataAtual = new DateTime(
+    "now",
+    new DateTimeZone("America/Sao_Paulo")
+);
 
-$sql = "INSERT INTO registros(nome, tipo, data_registro, hora_registro)
-VALUES('$nome', '$tipo', '$data', '$hora')";
+$data_registro = $dataAtual->format("Y-m-d");
+$hora_registro = $dataAtual->format("H:i:s");
+
+$sql = "INSERT INTO registros
+(nome, tipo, data_registro, hora_registro)
+VALUES
+('$nome', '$tipo', '$data_registro', '$hora_registro')";
 
 if($conexao->query($sql)){
     echo "sucesso";
